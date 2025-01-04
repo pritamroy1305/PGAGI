@@ -10,7 +10,7 @@ interface NewsCardProps {
 
 export function NewsCard({ article }: NewsCardProps) {
   return (
-    <Card className="w-full">
+    <Card className="custom-card"> {/* Apply custom class */}
       <CardHeader>
         <CardTitle className="text-lg line-clamp-2">{article.title}</CardTitle>
       </CardHeader>
@@ -24,7 +24,7 @@ export function NewsCard({ article }: NewsCardProps) {
         <div className="mt-4 text-xs text-muted-foreground">
           {article.source.name} · {new Date(article.publishedAt).toLocaleDateString()}
         </div>
-        
+
         <Link href={article.url}>
             <button className="mt-2 px-4 py-1 text-sm font-semibold text-white dark:text-black bg-primary rounded hover:bg-primary-dark transition-colors duration-300 dark:bg-primary-light dark:hover:bg-primary">
             Read more
@@ -34,3 +34,4 @@ export function NewsCard({ article }: NewsCardProps) {
     </Card>
   );
 }
+

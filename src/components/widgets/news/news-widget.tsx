@@ -38,7 +38,7 @@ export function NewsWidget() {
 
   return (
     <div className="space-y-4">
-      <h2 className="text-xl font-semibold">Latest News</h2>
+      <h2 className="text-xl font-semibold">Latest News !! </h2>
       {articles.map((article) => (
         <NewsCard key={article.source.id} article={article} />
       ))}

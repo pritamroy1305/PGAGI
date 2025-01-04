@@ -77,9 +77,10 @@ export function GitHubCard() {
                         Public Repos: {user.public_repos} · Followers: {user.followers} · Following: {user.following}
                     </div>
                     <Link href={user.html_url}>
-                        <button className="mt-2 px-4 py-2 text-sm font-semibold text-white bg-primary rounded-full hover:bg-primary-dark transition-colors duration-300">
-                            View Profile
-                        </button>
+                    <button className="mt-2 px-4 py-2 text-sm font-semibold text-orange-500 bg-primary rounded-full hover:bg-primary-dark transition-colors duration-300">
+    View Profile
+</button>
+
                     </Link>
                 </CardContent>
             </Card>
